@@ -1,0 +1,7 @@
+.git
+.idea
+.nuxt
+node_modules
+
+.env
+README.md

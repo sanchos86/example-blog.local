@@ -1,0 +1,17 @@
+services:
+  nuxt:
+    build:
+      dockerfile: ./docker/nuxt/Dockerfile
+      context: .
+    container_name: nuxt
+    restart: unless-stopped
+  nginx:
+    ports:
+      - 80:80
+    build: ./docker/nginx
+    container_name: nginx
+    restart: unless-stopped
+    environment:
+      API_HOST: ${API_HOST}
+    depends_on:
+      - nuxt
