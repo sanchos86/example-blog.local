@@ -21,7 +21,8 @@ export default {
   plugins: [
     '~/plugins/axios',
     '~/plugins/filters',
-    '~/plugins/ui-library'
+    '~/plugins/ui-library',
+    '~/plugins/DI'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
