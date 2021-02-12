@@ -1,8 +1,10 @@
+import Model from '@/models/Model';
 import Tag from '~/models/Tag';
 import Category from '~/models/Category';
 
-export default class Post {
+export default class Post extends Model {
   constructor(post = {}) {
+    super();
     this.raw = post;
     this.id = post.id;
     this.src = post.src;
