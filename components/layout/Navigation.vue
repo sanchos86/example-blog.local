@@ -91,6 +91,7 @@
         z-index: map_get($z-indices, 5);
         flex-direction: column;
         display: none;
+        min-width: 100%;
       }
     }
     &__item {
