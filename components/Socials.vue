@@ -8,7 +8,7 @@
         :href="social.url"
         :title="social.name"
       >
-        <img :src="require(`~/assets/images/svg/${social.icon}.svg`)" :alt="social.name">
+        <font-awesome-icon :icon="['fab', social.icon]" size="lg" />
       </a>
     </li>
   </ul>
@@ -55,6 +55,23 @@
 
     &__link {
       display: inline-flex;
+
+      &--github {
+        color: #24292e;
+      }
+
+      &--facebook {
+        color: #3b5998;
+      }
+
+      &--linkedin {
+        color: #2977c9;
+      }
+
+      &--telegram {
+        color: #0088cc;
+      }
+
     }
   }
 </style>

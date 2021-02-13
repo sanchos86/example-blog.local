@@ -14,7 +14,8 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '~/assets/scss/main.scss'
+    '~/assets/scss/main.scss',
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -22,7 +23,8 @@ export default {
     '~/plugins/axios',
     '~/plugins/filters',
     '~/plugins/ui-library',
-    '~/plugins/DI'
+    '~/plugins/DI',
+    '~/plugins/font-awesome'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

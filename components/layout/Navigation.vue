@@ -9,7 +9,7 @@
       <li class="nav__item">
         <nuxt-link class="nav__link" :to="{ name: 'categories-slug' }">
           <span>Категории</span>
-          <i class="nav__link-icon fas fa-angle-down" />
+          <font-awesome-icon class="nav__link-icon" :icon="['fas', 'chevron-down']" size="sm" />
         </nuxt-link>
         <ul class="nav__list nav__list--subnav">
           <li
@@ -33,7 +33,7 @@
       </li>
     </ul>
     <button type="button" class="nav__mobile-menu-switch" @click="toggleMobileNavigation(true)">
-      <i class="fas fa-bars" />
+      <font-awesome-icon :icon="['fas', 'bars']" size="lg" />
     </button>
     <transition name="fade">
       <MobileNavigation

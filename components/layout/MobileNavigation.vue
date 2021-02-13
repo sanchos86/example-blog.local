@@ -6,7 +6,10 @@
         class="mobile-nav__close-btn"
         @click="toggleMobileNavigation"
       >
-        <i class="fas fa-times" />
+        <font-awesome-icon
+          size="sm"
+          :icon="['fas', 'times']"
+        />
       </button>
     </div>
     <ul class="mobile-nav__list">
@@ -22,7 +25,11 @@
       <li class="mobile-nav__item">
         <a class="mobile-nav__link" @click="isCategoriesOpened = !isCategoriesOpened">
           <span>Категории</span>
-          <i class="mobile-nav__link-icon fas" :class="[ isCategoriesOpened ? 'fa-angle-up' : 'fa-angle-down' ]" />
+          <font-awesome-icon
+            class="mobile-nav__link-icon"
+            size="sm"
+            :icon="['fas', isCategoriesOpened ? 'chevron-up' : 'chevron-down']"
+          />
         </a>
         <ul v-if="isCategoriesOpened" class="mobile-nav__list mobile-nav__list--subnav">
           <li
