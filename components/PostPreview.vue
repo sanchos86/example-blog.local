@@ -18,8 +18,8 @@
       <span class="post-preview__date">
         {{ post.publishedAt | formatDate }}
       </span>
-      <p v-if="type === 'default'" class="post-preview__text">
-        {{ post.text | cropText }}
+      <p v-if="type === 'default' && post.plainText" class="post-preview__text">
+        {{ post.plainText | cropText(75) }}
       </p>
     </div>
     <div v-if="withControl" class="post-preview__control">

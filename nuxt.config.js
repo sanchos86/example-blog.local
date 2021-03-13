@@ -45,7 +45,7 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: 'http://18.198.203.176'
+    baseURL: 'http://api.web-artisan.ru'
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

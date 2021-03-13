@@ -25,7 +25,7 @@
       <img class="post__img" :src="post.src" :alt="post.title">
     </div>
     <div class="post__content">
-      {{ post.text }}
+      <PostContent :html="post.text" />
     </div>
     <footer class="post__footer">
       <div v-if="post.tags && post.tags.length" class="post__tags">
@@ -46,11 +46,13 @@
 
   import Tag from '~/components/Tag.vue';
   import PostSkeleton from '~/components/PostSkeleton.vue';
+  import PostContent from '~/components/PostContent.vue';
 
   export default {
     components: {
       Tag,
-      PostSkeleton
+      PostSkeleton,
+      PostContent
     },
     async fetch() {
       const { params: { slug }, $Container } = this.$nuxt.context;

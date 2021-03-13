@@ -17,7 +17,8 @@ module.exports = {
   rules: {
     semi: ['error', 'always'],
     'vue/script-indent': ['error', 2, { baseIndent: 1, switchCase: 1 }],
-    'space-before-function-paren': ['error', 'never']
+    'space-before-function-paren': ['error', 'never'],
+    'vue/no-v-html': 'off'
   },
   overrides: [
     {

@@ -12,6 +12,7 @@ export default class Post extends Model {
     this.title = post.title;
     this.text = post.text;
     this.publishedAt = post.publishedAt;
+    this.plainText = post.plainText;
   }
 
   get postViews() {
