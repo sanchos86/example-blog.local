@@ -109,7 +109,7 @@
     }
 
     &__thumb {
-      margin-bottom: map_get($gaps, 2);
+      margin-bottom: map_get($gaps, 4);
     }
 
     &__img {
