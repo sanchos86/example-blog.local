@@ -111,6 +111,11 @@
       async onClick(page) {
         await this.$router.push({ name: 'index', query: { page } });
       }
+    },
+    head() {
+      return {
+        title: 'Главная | web-artisan.ru'
+      };
     }
   };
 </script>

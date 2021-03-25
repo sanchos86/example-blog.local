@@ -20,6 +20,16 @@
   </div>
 </template>
 
+<script>
+  export default {
+    head() {
+      return {
+        title: 'О блоге | web-artisan.ru'
+      };
+    }
+  };
+</script>
+
 <style lang="scss" scoped>
   .about {
     clear: both;

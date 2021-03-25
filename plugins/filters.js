@@ -12,6 +12,15 @@ export const cropText = (value, length = 100) => {
   return value;
 };
 
+export const capitalize = (value) => {
+  if (typeof value === 'string') {
+    return value.toUpperCase();
+  }
+  return value;
+};
+
 Vue.filter('formatDate', formDate);
 
 Vue.filter('cropText', cropText);
+
+Vue.filter('capitalize', capitalize);

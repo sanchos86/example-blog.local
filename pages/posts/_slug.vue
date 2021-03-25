@@ -80,6 +80,11 @@
         const categorySlug = this.post.category && this.post.category.slug;
         return { name: 'categories-slug', params: { slug: categorySlug } };
       }
+    },
+    head() {
+      return {
+        title: this.post.title ? `${this.post.title} | web-artisan.ru` : undefined
+      };
     }
   };
 </script>

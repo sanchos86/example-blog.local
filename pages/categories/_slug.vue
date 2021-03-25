@@ -126,6 +126,11 @@
       async onClick(page) {
         await this.$router.push({ name: 'categories-slug', params: { slug: this.categorySlug }, query: { page } });
       }
+    },
+    head() {
+      return {
+        title: `${this.$options.filters.capitalize(this.categorySlug)} | web-artisan.ru`
+      };
     }
   };
 </script>
