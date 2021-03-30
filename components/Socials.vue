@@ -25,18 +25,13 @@
             icon: 'github'
           },
           {
-            name: 'Facebook',
-            url: 'https://www.facebook.com/Alexandr.Aladin.7370013',
-            icon: 'facebook'
-          },
-          {
             name: 'Linkedin',
-            url: 'https://www.linkedin.com/',
+            url: 'https://www.linkedin.com/in/aleksandr-aladin/',
             icon: 'linkedin'
           },
           {
             name: 'Telegram',
-            url: 'https://web.telegram.org/',
+            url: 'https://t.me/aleksandr_aladin',
             icon: 'telegram'
           }
         ]
@@ -58,10 +53,6 @@
 
       &--github {
         color: #24292e;
-      }
-
-      &--facebook {
-        color: #3b5998;
       }
 
       &--linkedin {
