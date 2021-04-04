@@ -15,6 +15,10 @@
 
 <style lang="scss">
   .post-content {
+    h1, h2, h3, h4, h5, h6 {
+      margin: revert;
+    }
+
     h1 {
       font-size: 2em;
     }
@@ -41,6 +45,10 @@
 
     a {
       text-decoration: underline;
+    }
+
+    p {
+      margin-bottom: map-get($gaps, 3);
     }
 
     pre {
