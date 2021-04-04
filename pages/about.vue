@@ -1,6 +1,6 @@
 <template>
   <div class="col-12 col-sm-12 col-md-12 col-lg-8 mb-4">
-    <ui-heading class="mb-4" title="О блоге" :level="4" />
+    <ui-heading class="mb-4" title="О блоге" :level="1" />
     <div class="about">
       <div class="about__photo-wrap mr-4">
         <img class="about__photo" src="~/assets/images/photo.jpg" alt="">

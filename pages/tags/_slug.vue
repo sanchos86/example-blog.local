@@ -1,6 +1,6 @@
 <template>
   <div class="col-12 col-sm-12 col-md-12 col-lg-8 mb-4 mb-lg-0">
-    <ui-heading class="mb-4" :level="4" :title="title" />
+    <ui-heading class="mb-4" :level="1" :title="title" />
     <template v-if="loading.initial">
       <div class="row">
         <div

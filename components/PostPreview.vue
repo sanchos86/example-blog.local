@@ -1,5 +1,5 @@
 <template>
-  <div class="post-preview mb-4" :class="classes">
+  <article class="post-preview mb-4" :class="classes">
     <nuxt-link
       class="post-preview__thumb"
       :to="{ name: 'posts-slug', params: { slug: post.slug } }"
@@ -27,7 +27,7 @@
         Читать далее
       </ui-button>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>

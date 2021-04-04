@@ -12,13 +12,6 @@
         <span class="post__date">
           {{ post.publishedAt | formatDate }}
         </span>
-        &hyphen;
-        <span class="post__views">
-          <font-awesome-icon :icon="['fas', 'eye']" size="sm" />
-          <span class="post__views-count">
-            {{ post.postViews }}
-          </span>
-        </span>
       </div>
     </header>
     <div class="post__thumb">

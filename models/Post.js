@@ -15,10 +15,6 @@ export default class Post extends Model {
     this.plainText = post.plainText;
   }
 
-  get postViews() {
-    return this.raw.postViews || 0;
-  }
-
   get tags() {
     return (this.raw.tags || []).map(tag => new Tag(tag));
   }
