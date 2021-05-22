@@ -3,7 +3,7 @@ import serviceNames from '~/constants/serviceNames';
 export const state = () => ({
   categories: [],
   tags: [],
-  popularPosts: [],
+  latestPosts: [],
   perPage: 6
 });
 
@@ -29,8 +29,8 @@ export const mutations = {
   setTags(state, tags) {
     state.tags = tags;
   },
-  setPopularPosts(state, popularPosts) {
-    state.popularPosts = popularPosts;
+  setLatestPosts(state, latestPosts) {
+    state.latestPosts = latestPosts;
   }
 };
 
@@ -38,6 +38,6 @@ export const actions = {
   async nuxtServerInit(context, { $Container }) {
     await $Container.get(serviceNames.CATEGORIES_SERVICE).getCategories();
     await $Container.get(serviceNames.TAGS_SERVICE).getTags();
-    await $Container.get(serviceNames.POSTS_SERVICE).getPopularPosts();
+    await $Container.get(serviceNames.POSTS_SERVICE).getLatestPosts();
   }
 };

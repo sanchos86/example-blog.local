@@ -7,8 +7,8 @@ export default HttpService => ({
     const url = `/api/posts/${postId}`;
     return HttpService.get(url);
   },
-  getPopularPosts() {
-    const url = '/api/posts/popular';
+  getLatestPosts() {
+    const url = '/api/posts/latest';
     return HttpService.get(url);
   }
 });

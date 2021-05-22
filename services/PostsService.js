@@ -19,9 +19,9 @@ export default class PostService {
     return new Post(post);
   }
 
-  async getPopularPosts() {
-    let popularPosts = await this.container.get(serviceNames.API_SERVICE).posts.getPopularPosts();
-    popularPosts = popularPosts.map(popularPost => new Post(popularPost));
-    this.store.commit('setPopularPosts', popularPosts);
+  async getLatestPosts() {
+    let latestPosts = await this.container.get(serviceNames.API_SERVICE).posts.getLatestPosts();
+    latestPosts = latestPosts.map(post => new Post(post));
+    this.store.commit('setLatestPosts', latestPosts);
   }
 }

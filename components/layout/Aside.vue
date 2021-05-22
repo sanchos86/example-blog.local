@@ -1,9 +1,9 @@
 <template>
   <aside class="aside col-12 col-sm-12 col-md-12 col-lg-4">
-    <ui-heading class="mb-4" :level="4" title="Популярные записи" />
+    <ui-heading class="mb-4" :level="4" title="Последние записи" />
     <div class="most-viewed mb-4">
       <PostPreview
-        v-for="(post, index) in popularPosts"
+        v-for="(post, index) in latestPosts"
         :key="index"
         type="aside"
         :post="post"
@@ -34,7 +34,7 @@
     computed: {
       ...mapState([
         'tags',
-        'popularPosts'
+        'latestPosts'
       ])
     }
   };
