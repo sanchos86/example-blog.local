@@ -73,7 +73,10 @@
     middleware({ store, redirect, params }) {
       if (!params.slug) {
         const { categories } = store.state;
-        return redirect({ name: 'categories-slug', params: { slug: categories[0].slug } });
+        if (categories[0] && categories[0].slug) {
+          return redirect({ name: 'categories-slug', params: { slug: categories[0].slug } });
+        }
+        return redirect({ name: 'index' });
       }
     },
     computed: {

@@ -2,11 +2,13 @@ FROM node:14-alpine
 
 ENV HOST 0.0.0.0
 
-COPY . /var/www
-
 WORKDIR /var/www
 
+COPY package*.json ./
+
 RUN npm ci
+
+COPY . ./
 
 RUN npm run build
 

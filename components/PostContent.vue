@@ -76,6 +76,10 @@
       padding-left: 16px
     }
 
+    img {
+      width: 100%;
+    }
+
     ol,
     ul {
       padding-left: 1.5em;
