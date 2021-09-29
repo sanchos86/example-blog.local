@@ -24,7 +24,7 @@ export default {
     '~/plugins/axios',
     '~/plugins/filters',
     '~/plugins/ui-library',
-    '~/plugins/DI',
+    '~/plugins/bootstrap',
     '~/plugins/font-awesome'
   ],
 

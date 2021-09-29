@@ -1,5 +1,3 @@
-import serviceNames from '~/constants/serviceNames';
-
 export const state = () => ({
   categories: [],
   tags: [],
@@ -35,9 +33,9 @@ export const mutations = {
 };
 
 export const actions = {
-  async nuxtServerInit(context, { $Container }) {
-    await $Container.get(serviceNames.CATEGORIES_SERVICE).getCategories();
-    await $Container.get(serviceNames.TAGS_SERVICE).getTags();
-    await $Container.get(serviceNames.POSTS_SERVICE).getLatestPosts();
+  async nuxtServerInit(context, { $categoriesService, $tagsService, $postsService }) {
+    await $categoriesService.getCategories();
+    await $tagsService.getTags();
+    await $postsService.getLatestPosts();
   }
 };

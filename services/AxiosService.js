@@ -1,13 +1,11 @@
 export default class AxiosService {
   constructor(axiosInstance) {
-    this.$axiosInstance = axiosInstance;
+    this.axiosInstance = axiosInstance;
   }
 
-  get(url, params = {}, axiosConfig = {}) {
-    let config = {
-      params
-    };
-    config = Object.assign(axiosConfig, config);
-    return this.$axiosInstance.get(url, config);
+  get(url, params = {}, extraConfig = {}) {
+    const defaultConfig = { params };
+    const config = Object.assign(extraConfig, defaultConfig);
+    return this.axiosInstance.get(url, config);
   }
 }

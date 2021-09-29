@@ -35,8 +35,6 @@
 </template>
 
 <script>
-  import serviceNames from '~/constants/serviceNames';
-
   import Tag from '~/components/Tag.vue';
   import PostSkeleton from '~/components/PostSkeleton.vue';
   import PostContent from '~/components/PostContent.vue';
@@ -48,9 +46,9 @@
       PostContent
     },
     async fetch() {
-      const { params: { slug }, $Container } = this.$nuxt.context;
+      const { params: { slug }, $postsService } = this.$nuxt.context;
       try {
-        this.post = await $Container.get(serviceNames.POSTS_SERVICE).getPost(slug);
+        this.post = await $postsService.getPost(slug);
       } finally {
         this.loading.initial = false;
       }

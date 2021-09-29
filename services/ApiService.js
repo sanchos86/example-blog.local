@@ -1,15 +1,13 @@
-import serviceNames from '~/constants/serviceNames';
-
 export default class ApiService {
-  constructor(api, container) {
-    this.container = container;
+  constructor(httpService, api) {
+    this.httpService = httpService;
     this.api = api;
     this.init();
   }
 
   init() {
-    Object.entries(this.api).forEach(([key, value]) => {
-      this[key] = value(this.container.get(serviceNames.AXIOS_SERVICE));
-    });
+    this.categories = this.api.categories(this.httpService);
+    this.tags = this.api.tags(this.httpService);
+    this.posts = this.api.posts(this.httpService);
   }
 }

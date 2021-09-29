@@ -23,7 +23,6 @@
     "core-js": "^3.6.5",
     "normalize-scss": "^7.0.1",
     "nuxt": "^2.14.6",
-    "typedi": "^0.10.0",
     "vuejs-paginate": "^2.1.0"
   },
   "devDependencies": {

@@ -37,8 +37,6 @@
 <script>
   import { mapState, mapGetters } from 'vuex';
 
-  import serviceNames from '~/constants/serviceNames';
-
   import Pagination from '~/components/Pagination.vue';
   import PostPreview from '~/components/PostPreview.vue';
   import NothingFound from '~/components/NothingFound.vue';
@@ -110,7 +108,7 @@
     },
     methods: {
       async getPosts(page) {
-        const { $Container } = this.$nuxt.context;
+        const { $postsService } = this.$nuxt.context;
         const { perPage, tagSlug } = this;
         this.currentPage = Number(page);
         const {
@@ -118,7 +116,7 @@
           meta: {
             total
           }
-        } = await $Container.get(serviceNames.POSTS_SERVICE).getPosts({ page, perPage, tag: tagSlug });
+        } = await $postsService.getPosts({ page, perPage, tag: tagSlug });
         this.posts = posts;
         this.total = total;
       },
