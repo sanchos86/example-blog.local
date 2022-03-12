@@ -1,1 +1,1 @@
-# web-artisan.ru
+# example-blog.local

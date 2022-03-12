@@ -24,7 +24,7 @@
   export default {
     head() {
       return {
-        title: 'О блоге | web-artisan.ru'
+        title: 'О блоге | example-blog.local'
       };
     }
   };

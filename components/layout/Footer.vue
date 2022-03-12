@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          &copy; {{ new Date().getFullYear() }} web-artisan.ru
+          &copy; {{ new Date().getFullYear() }} example-blog.local
         </div>
       </div>
     </div>

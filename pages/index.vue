@@ -112,7 +112,7 @@
     },
     head() {
       return {
-        title: 'Главная | web-artisan.ru'
+        title: 'Главная | example-blog.local'
       };
     }
   };

@@ -6,7 +6,7 @@
           <div class="col-12 col-sm-6">
             <h1 class="header__title justify-content-center justify-content-sm-start mb-2 mb-sm-0">
               <nuxt-link to="/" class="header__logo">
-                web-artisan.ru
+                example-blog.local
               </nuxt-link>
             </h1>
           </div>

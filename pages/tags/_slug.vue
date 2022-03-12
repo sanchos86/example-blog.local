@@ -126,7 +126,7 @@
     },
     head() {
       return {
-        title: `${this.$options.filters.capitalize(this.tagSlug)} | web-artisan.ru`
+        title: `${this.$options.filters.capitalize(this.tagSlug)} | example-blog.local`
       };
     }
   };

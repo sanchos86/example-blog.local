@@ -74,7 +74,7 @@
     },
     head() {
       return {
-        title: this.post.title ? `${this.post.title} | web-artisan.ru` : undefined
+        title: this.post.title ? `${this.post.title} | example-blog.local` : undefined
       };
     }
   };

@@ -14,7 +14,7 @@ upstream api {
 
 server {
     listen 80;
-    server_name web-artisan.ru;
+    server_name example-blog.local;
 
     gzip on;
     gzip_types text/plain text/css application/javascript;
@@ -41,6 +41,6 @@ server {
         proxy_pass                         http://api;
     }
 
-    access_log /var/log/nginx/web-artisan.ru.access.log main;
-    error_log /var/log/nginx/web-artisan.ru.error.log warn;
+    access_log /var/log/nginx/example-blog.local.access.log main;
+    error_log /var/log/nginx/example-blog.local.error.log warn;
 }
